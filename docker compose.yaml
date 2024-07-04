@@ -16,6 +16,7 @@ services:
   froentend:
     image: froentend:v1.0
     container_name: froentend
+    command: sh -c "sleep 20 && /opt/server/index.js"
     depends_on:
      - backend
     ports:
